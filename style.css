@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+}
+
+.list {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.container p {
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container p:first-child {
+    justify-content: flex-end;
+}
+
+.container p:last-child {
+    justify-content: flex-start;
+}
